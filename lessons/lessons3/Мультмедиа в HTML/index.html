@@ -6,12 +6,82 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="Alina.jpg" alt="">
+<form action="http://fe.it-academy.by/TestForm.php" method="post" >
+    <fieldset>
+        <legend>test</legend>
+        <label for="test">
+            your name
+        
+    </label>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere expedita atque! Cupiditate iste debitis dolores. Sapiente, ipsa fugit. Iure atque expedita omnis velit. Debitis fuga ducimus pariatur non illo.
+Eius possimus obcaecati totam ratione adipisci unde placeat, odit nihil, itaque et corrupti atque quis enim officia. Voluptates in maiores quidem placeat voluptatum cupiditate perferendis suscipit, et minus minima omnis?
+Ipsam ducimus earum possimus facere pariatur consequuntur maiores, veritatis temporibus consectetur repellat fuga ipsa! Sed dicta cumque vitae accusantium quod, repellat praesentium nobis porro pariatur ratione quam, asperiores consequuntur? Cumque.
+Ipsum magni iusto, doloremque quo rerum sunt consequuntur dicta quam ipsam debitis, magnam culpa excepturi illum cupiditate aperiam ea expedita reiciendis suscipit? Rerum laudantium, eos quaerat amet exercitationem debitis totam!
+Qui accusamus laborum nihil doloremque cupiditate excepturi quam atque optio? Est sed eos nostrum consequuntur? Voluptas cumque explicabo adipisci vel nostrum totam atque fugiat ducimus incidunt deleniti, laudantium culpa consequatur!</p>
 
-    <form action="fe.it-academy.by/TestForm.php" method="post"> 
-        <input type="text" name="name">
-    <input type="submit" value="send">
-    </form>
+    <input type="text" >
+    <input type="text">
+    <input type="text" autofocus>
+    <input type="text">
+    </fieldset>
+    
+
+    <fieldset>
+        <legend>checkbox</legend>
+        <input type="checkbox" name="check[]" value="check1">
+        <input type="checkbox"name="check[]"value="check2">
+        <input type="checkbox"name="check[]"value="check3">
+        <input type="checkbox"name="check[]"value="check4">
+        <input type="checkbox"name="check[]"value="check5">
+        </fieldset>
+
+        <fieldset> 
+            <legend>radio</legend>
+            <input type="radio" name="radio" value="radio1" >
+            <input type="radio"name="radio" value="radio2"> 
+            <input type="radio"name="radio" value="radio3">
+            
+            <input type="radio" name="radio2" value="radio1" >
+            <input type="radio"name="radio2" value="radio2"> 
+            <input type="radio"name="radio2" value="radio3">
+            </fieldset>
+
+            <fieldset>
+                <legend>email</legend>
+                <input type="email" name="email" >
+     
+                </fieldset>
+
+                <fieldset>
+                <legend>file</legend>
+                <input type="file" name="file" >
+     
+                </fieldset>
+
+                <fieldset>
+                    <legend>textarea</legend>
+                    <textarea name="text" cols="30" rows="10"></textarea>
+         
+                    </fieldset>
+                    <fieldset>
+                        <legend>select</legend>
+                        <select name="select" size="2" multiple>
+                            <option value="sel1">sel1</option>
+                            <option value="sel2">sel2</option>
+                            <option value="sel3">sel3</option>
+                            <option value="sel4">sel4</option>
+                        </select>
+                        
+                        </fieldset>
+                    <input type="number" min="10" max="100" step="30">
+                    <input type="text" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+                    <input type="text" value="test" name="text" placeholder="fdrfd">
+    <input type="submit">
+    <input type="reset">
+    <button type="reset">
+        <p>reset</p>
+    </button>
+</form>
 </body>
 
 </html> 
