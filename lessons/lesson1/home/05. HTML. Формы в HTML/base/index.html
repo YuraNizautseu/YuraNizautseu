@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <H1 align="center"> Заполните анкету</H1>
+   <form action="http://fe.it-academy.by/TestForm.php" method="post" >
+   <fieldset>
+    <legend>Личные данные</legend>
+    <input type="text" name="Iname" placeholder="Фамилия" pattern="^[А-Яа-яЁё\S]{1,25}" required > <br> 
+    <input type="text" name="Имя" placeholder="Имя" pattern="^[А-Яа-яЁё\S]{1,20}"  required > <br>
+    <input type="text" name="Отчество" placeholder="Отчество" pattern="^[А-Яа-яЁё\S]{1,24}" required  > 
+    <fieldset>
+        <legend>паспортные данные</legend>
+        <input type="Серия" placeholder="AA" pattern="[A-z]{2}" required >
+        <input type="номер" placeholder="1234567" pattern="[1-7]{7}" required >
+    </fieldset>
+    <fieldset>
+        <legend>Дата рождения</legend>
+        <input type="Год рождения" name="Год рождения" pattern="[0-9]{4}"><br>
+        <select name="Месяц">
+            <option value="1">Январь</option>
+            <option value="2">Февраль></option>
+            <option value="3">Март</option>
+        </select> <br>
+        <input type="number" min="1" max="31" step="1">
+        
+    </fieldset>
+    <select name="Граданство" required >
+        <option value="1">РБ</option>
+            <option value="2">РФ</option>
+            </select> <br>
+            Адресс: <br>
+            <textarea name="text" cols="20" rows="3"></textarea>
+   </fieldset>
+   <fieldset>
+    <legend>Интересы</legend>
+    <fieldset>
+        <legend>Хобби</legend>
+        <input type="checkbox" name="Рыбалка" >
+        <label for="Рыбалка">Рыбалка</label> <br>
+        <input type="checkbox"name="Астрономия">
+        <label for="Астрономия">Астрономия</label> <br>
+        <input type="checkbox"name="Дайвинг">
+        <label for="Дайвинг">Дайвинг</label> <br>
+        <input type="checkbox"name="Марки">
+        <label for="Марки">Марки</label>
+    </fieldset>
+    <fieldset>
+        <legend>Домашние животные</legend>
+        <select name="Домашние животные" id="Домашние животные" size="12" multiple>
+            <optgroup label="Попугаи">
+                <option value="1">Волнистый</option>
+                <option value="2">Ара</option>
+                <option value="3">Неразлучник</option>
+           
+            </optgroup>
+            <optgroup label="Рыба">
+                <option value="4">Караси</option>
+                <option value="5">Окуни</option>
+                <option value="6">Осётр</option>
+           
+            </optgroup>
+            <optgroup label="Птицы">
+                <option value="7">Стая ворон</option>
+                <option value="8">Аист</option>
+                <option value="9">Архиоптерикс</option>
+           
+            </optgroup>
+
+
+        </select>
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+            <input type="Логин"name="Логин" placeholder="Логин" pattern="^[A-Za-z\S]{5,20}" required > <br>
+            <input type="password" name="password" placeholder="Пароль" pattern="^[A-Za-z\S]{10,20}" autocomplete="off" required >
+        </fieldset>
+    </fieldset>
+   </fieldset>
+   <fieldset>
+    <legend>Координаты</legend>
+    <input type="email" name="email" placeholder="введите адресс почты"> <br>
+    <input type="url" name="url" placeholder="введите адресс сайта">
+   </fieldset>
+   <fieldset>
+    <legend>Цифры</legend>
+    <input type="number" name="number" min="-2.5" max="2.5" step="0.1" > <br>
+    <input type="range" name="range" min="1" max="10">
+   </fieldset>
+   <fieldset>
+    <legend>Кнопки управления</legend>
+    <input type="submit">
+    <input type="reset"> <br>
+    <button disabled="disabled">
+        <b>disabled</b> <br>
+        <img src="../email.jpg" >
+
+    </button>
+    
+   </fieldset>
+   
+</form>
+</body>
+</html>

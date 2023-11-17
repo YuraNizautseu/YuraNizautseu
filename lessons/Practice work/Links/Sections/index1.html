@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" >
+    <fieldset>
+     <legend>Контактная информация</legend>
+     
+    
+<label for="Контактная информация">
+     Имя
+     <input type="Имя" > <br>
+     телефон
+     <input type="number"> <br>
+     email
+     <input type="email" name="email" > <br>
+    </label>
+</fieldset>
+<fieldset>
+    <legend>Персональная информация</legend>
+    <label for="Персональная информация">
+    Возраст
+    <input type="number"> <br>
+    пол
+    <select name="select" size="1" multiple> 
+        <option value="женщина">женщина</option>
+        <option value="мужчина">мужчина</option>
+    </select> <br>
+    
+     Перечислите личные качества
+    <textarea name="text" cols="30" rows="10"></textarea> 
+</label>
+</fieldset>
+<fieldset>
+    <legend>Выберете ваших любимых животных</legend>
+    <label for="Выберете ваших любимых животных">
+        зебра
+        <input type="checkbox" name="check" value="check1">
+    </label>
+        <label for="Выберете ваших любимых животных">
+            Кошак
+            <input type="checkbox"name="зебра"value="check2"></label>
+    
+        <input type="checkbox"name="кошак"value="check3">
+        <input type="checkbox"name="check"value="check4"> <br>
+        <input type="checkbox"name="check"value="check5">
+        <input type="checkbox"name="check"value="check5">
+        <input type="checkbox"name="check"value="check5">
+        <input type="checkbox"name="check[]"value="check5">
+</fieldset>
+
+<input type="submit">
+</form>
+</body>
+</html>
