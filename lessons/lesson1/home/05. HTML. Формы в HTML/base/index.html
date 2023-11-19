@@ -10,17 +10,17 @@
    <form action="http://fe.it-academy.by/TestForm.php" method="post" >
    <fieldset>
     <legend>Личные данные</legend>
-    <input type="text" name="Фамилия" placeholder="Фамилия" pattern="^[А-Яа-яЁё\S]{1,25}" required > <br> 
-    <input type="text" name="Имя" placeholder="Имя" pattern="^[А-Яа-яЁё\S]{1,20}"  required > <br>
-    <input type="text" name="Отчество" placeholder="Отчество" pattern="^[А-Яа-яЁё\S]{1,24}" required  > 
+    <input type="text"  placeholder="Фамилия" pattern="^[А-Яа-яЁё]{1,25}" required autofocus > <br> 
+    <input type="text" name="Имя" placeholder="Имя" pattern="^[А-Яа-яЁё]{1,20}" required> <br>
+    <input type="text" name="Отчество" placeholder="Отчество" pattern="^[А-Яа-яЁё]{1,24}" required> 
     <fieldset>
         <legend>паспортные данные</legend>
-        <input type="Серия" placeholder="AA" pattern="[A-z]{2}" required >
-        <input type="номер" placeholder="1234567" pattern="[1-7]{7}" required >
+        <input type="Серия" size="1" placeholder="AA" pattern="[A-Z]{2}" required >
+        <input type="номер" size="5" placeholder="1234567" pattern="[1-7]{7}" required >
     </fieldset>
     <fieldset>
         <legend>Дата рождения</legend>
-        <input type="Год рождения" name="Год рождения" pattern="[0-9]{4}"><br>
+        <input type="Год рождения" size="3"  name="Год рождения" placeholder="2000" pattern="[0-9]{4}"><br>
         <select name="Месяц">
             <option value="1">Январь</option>
             <option value="2">Февраль></option>
@@ -75,8 +75,8 @@
         </select>
         <fieldset>
             <legend>Данные для входа и восстановления пароля</legend>
-            <input type="Логин"name="Логин" placeholder="Логин" pattern="^[A-Za-z\S]{5,20}" required > <br>
-            <input type="password" name="password" placeholder="Пароль" pattern="^[A-Za-z\S]{10,20}" autocomplete="off" required >
+            <input type="Логин"name="Логин" placeholder="Логин" pattern="^[A-Za-z]{5,20}" required > <br>
+            <input type="password" name="password" placeholder="Пароль" pattern="^[A-Za-z]{10,20}" autocomplete="off" required >
         </fieldset>
     </fieldset>
    </fieldset>
