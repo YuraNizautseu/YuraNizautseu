@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 + p{
+            color: red;
+        }
+        h1 ~ p{
+            font-style: italic;
+        }
+        div > span{
+            color: blue;
+        }
+        [type=email]{
+            border: 2px solid rgb(89, 0, 255);
+        }
+        [type=password]{
+            border: 2px solid yellow;
+        }
+        [type=text]{
+            border: 2px solid red;
+        }
+        [type=number]{
+            border: 2px solid green;
+        }
+        a[href^=http]{
+            color: red;
+        }
+        a[href^="https"]{
+            color: green;
+        }
+        a[href$="by/"]{
+            font-weight: bold;
+        }
+        a[href*="aliexpress.ru"]{
+            font-style: italic;
+        }
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>test</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium earum eius ipsum voluptas ut dicta
+            cupiditate eaque nisi, omnis aut inventore officiis fuga quidem reprehenderit? Id placeat atque assumenda
+            rem.
+
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam a odio id, nemo quas rerum hic magnam
+            facere sapiente culpa quae perferendis beatae eligendi quo labore modi optio similique doloremque.
+
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, sapiente! Quasi voluptas placeat quae,
+            suscipit illo, sed sapiente velit iure eveniet nesciunt quis, exercitationem error adipisci. Beatae natus
+            molestias illum.</p>
+    <hr>
+    <span>span1</span>
+    <div>
+        <span>span2</span>
+        <p>
+            <span>span3</span>
+        </p>
+    </div>
+
+    <hr>
+
+    <input type="text"> <br>
+    <input type="email" title="hello1"> <br>
+    <input type="number"> <br>
+    <input type="password" title="hello"> <br>
+
+    <hr>
+    <a href="https://av.by/">av.by</a> <br>
+    <a href="https://stigmat19.github.io/scsite/">stigmat19.github.io/scsite</a> <br>
+    <a href="http://aliexpress.ru/">aliexpress.ru</a> <br>
+    
+</body>
+
+</html>

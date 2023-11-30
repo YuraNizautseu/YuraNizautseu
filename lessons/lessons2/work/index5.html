@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 10000px;
+        }
+        .header, .footer{
+            height: 50px;
+            background-color: blue;
+        }
+       .content-Wrap{
+        background-color: yellow;
+       }
+       .menu{
+        width: 200px;
+        background-color: red;
+        height: 100px;
+        float: left;
+       }
+       .banner{
+        width: 200px;
+        background-color: green;
+        float: right;
+        height: 100px;
+       }
+    @media all and (max-width: 1187px){
+        .header{
+            background-color: red;
+        }
+        .content-Wrap{
+        background-color: aqua;
+       }
+       .menu{
+        background-color: grey;
+       }
+       .banner{
+        background-color: fuchsia;
+       }
+    }
+    @media all and (max-width: 800px){
+       
+       .menu{
+        width: 100%;
+        float: none;
+        background-color: grey;
+       }
+       .banner{
+        width: 100%;
+        float: none;
+        background-color: fuchsia;
+       }
+    }
+    </style>
+</head>
+<body>
+   <div class="header">header</div>
+   <div class="content-Wrap">
+    <div class="menu">menu</div>
+    <div class="banner">banner</div>
+    <div class="content">content</div>
+    <div style="clear:both"></div>
+   
+   </div>
+   <div class="footer">footer</div>
+</body>
+</html>
