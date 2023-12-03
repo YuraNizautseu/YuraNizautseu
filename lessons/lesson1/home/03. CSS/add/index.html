@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Index2</title>
+<style>
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#nav ul li {
+  display: inline-block;
+  width: 120px;
+  position: relative;
+}
+#nav a {
+  display: block;
+  background: #d3d3d3;
+  border: 2px solid #010101;
+  border-radius: 6px;
+  padding: 10px;
+  text-decoration: none;
+  color: #868991;
+}
+#nav .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -99999;
+}
+#nav li:hover .menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+  transition: all .5s ease-out;
+}
+#nav li li {
+  width: 120px;
+}
+@media all and (max-width: 920px) {
+  #nav ul li {
+    display: block;
+  }
+  #nav .menu {
+    left: 0;
+  }
+  #nav li:hover .menu {
+    top: 0;
+    left: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div id="nav">
+  <ul>
+    <li><a href="#">Понедельник</a></li>
+    <li><a href="#">Вторник</a></li>
+    <li><a href="#">Среда</a>
+      <ul class="menu">
+        <li><a href="#">Завтрак</a></li>
+        <li><a href="#">Обед</a></li>
+        <li><a href="#">Ужин</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Четверг</a></li>
+    <li><a href="#">Пятница</a></li>
+    <li><a href="#">Суббота</a></li>
+  </ul>
+</div>
+</body>
+</html>
